@@ -1,0 +1,130 @@
+MDScreen:
+
+    name: 'converterui'
+
+    MDFloatLayout:
+
+        md_bg_color: '#1f1f1f'
+        
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        size_hint: 0.999, 0.999
+        
+        MDLabel:
+            font_size: '18sp'
+            text: 'World Currency Converter'
+            text_color: '#FFFFFF'
+            halign: 'center'
+
+            pos_hint: {'center_x': 0.5, 'center_y': 0.90}
+            size_hint: 0.75, 0.075
+
+        MDLabel:
+
+            text: 'Convert From:'
+            text_color: '#FFFFFF'
+
+            halign: 'center'
+
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            size_hint: 0.75, 0.075
+
+        MDTextField:
+            id: convertfrom
+            name: 'convertfrom'
+
+            pos_hint: {'center_x': 0.5, 'center_y': 0.75}
+            size_hint: 0.75, 0.1075
+
+            halign: 'center'
+            cursor_color: '#FFFFFF'
+                          
+            text_color_focus: '#FFFFFF'
+            text_color_normal: '#FFFFFF'
+
+            line_color_focus: '#FFFFFF'
+            line_color_normal: '#FFFFFF'
+
+            use_bubble: False
+
+            on_focus: app.currencylist( self.name )
+
+        MDLabel:
+
+            text: 'Convert To:'
+            text_color: '#FFFFFF'
+
+            halign: 'center'
+
+            pos_hint: {'center_x': 0.5, 'center_y': 0.65}
+            size_hint: 0.75, 0.075
+
+        MDTextField:
+
+            id: convertto
+            name: 'convertto'
+
+            pos_hint: {'center_x': 0.5, 'center_y': 0.60}
+            size_hint: 0.75, 0.1075
+
+            halign: 'center'
+            
+            cursor_color: '#FFFFFF'
+                          
+            text_color_focus: '#FFFFFF'
+            text_color_normal: '#FFFFFF'
+
+            line_color_focus: '#FFFFFF'
+            line_color_normal: '#FFFFFF'
+            
+            use_bubble: False
+            
+            on_focus: app.currencylist( self.name )
+        
+        MDLabel:
+
+            text: 'Amount:'
+            text_color: '#FFFFFF'
+
+            halign: 'center'
+
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            size_hint: 0.75, 0.075
+
+        MDTextField:
+
+            id: amount
+
+            pos_hint: {'center_x': 0.5, 'center_y': 0.45}
+            size_hint: 0.75, 0.1075
+
+            cursor_color: '#FFFFFF'
+                          
+            text_color_focus: '#FFFFFF'
+            text_color_normal: '#FFFFFF'
+
+            line_color_focus: '#FFFFFF'
+            line_color_normal: '#FFFFFF'
+            
+        MDFillRoundFlatButton:
+	    
+	        pos_hint: {'center_x': 0.5, 'center_y': 0.32}
+            size_hint: 0.75, 0.075
+            
+            md_bg_color: '#09DB12'
+
+            text: "Convert Currency"
+            text_color: '#FFFFFF'
+            
+            on_press: app.converterui(convertfrom, convertto, amount)
+           	
+        MDLabel:
+
+            id: result
+
+            text: ''
+            text_color: '#FFFFFF'
+
+            halign: 'center'
+
+            pos_hint: {'center_x': 0.5, 'center_y': 0.19}
+            size_hint: 0.75, 0.075
