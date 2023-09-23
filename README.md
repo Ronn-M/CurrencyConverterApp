@@ -2,7 +2,7 @@
 
 Note: This repository was created for educational purposes
 
-This repository contains a currency conversion android application made in python using python base code and kivy.
+This repository contains a currency conversion android application made in python using only python modules and kivy design language.
 
 Check the bin folder for the apk file. 
 
