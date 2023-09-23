@@ -78,7 +78,8 @@ def convert( convert_from, convert_to, amount ):
             # api source - https://api-ninjas.com/api/convertcurrency
             api_url = f'https://api.api-ninjas.com/v1/convertcurrency?want={convert_to}&have={convert_from}&amount={amount}'
 
-            key = 'mXjXs6e/iN4ki6OwH8IzFA==LgB8jsUu8nnzFUgZ'
+	    # create key from api-source above
+            key = 'place key here'
 
             response = requests.get(api_url, headers={'X-Api-Key': key})
 
@@ -101,3 +102,4 @@ def convert( convert_from, convert_to, amount ):
         #print(e)
 
         return 'Connection Error!'
+    
