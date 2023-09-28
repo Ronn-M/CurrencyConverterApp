@@ -8,7 +8,7 @@ Check the bin folder for the apk file.
 
 Application Result:
 
-<img src="https://github.com/Ronn-M/CurrencyConverterApp/assets/117614337/60d43c61-bd92-490b-a308-ae7ef8f2a765" width="200" height="500">       
+<img src="[https://github.com/Ronn-M/CurrencyConverterApp/assets/117614337/60d43c61-bd92-490b-a308-ae7ef8f2a765](https://github.com/Ronn-M/CurrencyConverterApp/blob/0fc2ba28714081cb57c928b714f81b4d3e6f38f4/app-output/Screenshot_2023-09-23-15-20-12-446_org.test.currencyconverter.jpg)" width="200" height="500">       
 <img src="https://github.com/Ronn-M/CurrencyConverterApp/assets/117614337/82977aba-f372-4279-9dbf-521bb4fac0cb" width="200" height="500">  
 <img src="https://github.com/Ronn-M/CurrencyConverterApp/assets/117614337/98c4340a-78b4-46dd-a95f-94c06ae0a484" width="200" height="500"> 
 <img src="https://github.com/Ronn-M/CurrencyConverterApp/assets/117614337/690371f3-2629-4ead-8105-3a960bebd117" width="200" height="500">  
