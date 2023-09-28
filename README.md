@@ -8,10 +8,9 @@ Check the bin folder for the apk file.
 
 Application Result:
 
-<img src="https://github.com/Ronn-M/CurrencyConverterApp/blob/d5b6cb05550b655889dd1a3c519b9359c72d58c6/app-output/Screenshot_1.jpg">       
-<img src="https://github.com/Ronn-M/CurrencyConverterApp/blob/d5b6cb05550b655889dd1a3c519b9359c72d58c6/app-output/Screenshot_2.jpg">      
-<img src="https://github.com/Ronn-M/CurrencyConverterApp/blob/d5b6cb05550b655889dd1a3c519b9359c72d58c6/app-output/Screenshot_3.jpg">     
-<img src="https://github.com/Ronn-M/CurrencyConverterApp/blob/d5b6cb05550b655889dd1a3c519b9359c72d58c6/app-output/Screenshot_4.jpg">     
-<img src="https://github.com/Ronn-M/CurrencyConverterApp/blob/d5b6cb05550b655889dd1a3c519b9359c72d58c6/app-output/Screenshot_5.jpg">     
-<img src="https://github.com/Ronn-M/CurrencyConverterApp/blob/d5b6cb05550b655889dd1a3c519b9359c72d58c6/app-output/Screenshot_6.jpg">  
-
+<img src="https://github.com/Ronn-M/CurrencyConverterApp/blob/c36e98ad88c3b746b981ffd4ea1e77be5a3e10c0/screenshots/Screenshot_1.jpg">       
+<img src="https://github.com/Ronn-M/CurrencyConverterApp/blob/c36e98ad88c3b746b981ffd4ea1e77be5a3e10c0/screenshots/Screenshot_2.jpg">  
+<img src="https://github.com/Ronn-M/CurrencyConverterApp/blob/c36e98ad88c3b746b981ffd4ea1e77be5a3e10c0/screenshots/Screenshot_3.jpg">  
+<img src="https://github.com/Ronn-M/CurrencyConverterApp/blob/c36e98ad88c3b746b981ffd4ea1e77be5a3e10c0/screenshots/Screenshot_4.jpg">  
+<img src="https://github.com/Ronn-M/CurrencyConverterApp/blob/c36e98ad88c3b746b981ffd4ea1e77be5a3e10c0/screenshots/Screenshot_5.jpg">  
+<img src="https://github.com/Ronn-M/CurrencyConverterApp/blob/c36e98ad88c3b746b981ffd4ea1e77be5a3e10c0/screenshots/Screenshot_6.jpg">  
