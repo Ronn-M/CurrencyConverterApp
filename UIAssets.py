@@ -52,18 +52,16 @@ def create_currencylist():
         spacer_iii  = '\n\n\t\t\t'
         spacer_iv   = '\n\n\t\t\t\t'
 
-        file.write( f"MDScreen: {spacer_i}name: 'currencylist' {spacer_i}ScrollView:" )
-
-        file.write( f" {spacer_ii}id: scrollview {spacer_ii}name: '' {spacer_ii}MDBoxLayout: {spacer_iii}orientation: 'vertical' " )
-
-        file.write( f" {spacer_iii}" + "pos_hint: { 'center_x': 0.5, 'center_y': 0.5 }" + f" {spacer_iii}" + "size_hint: 1, 10.38" )
+        file.write( f"MDScreen: { spacer_i }name: 'currencylist' { spacer_i }ScrollView:" )
+        file.write( f" {spacer_ii}id: scrollview {spacer_ii}name: '' { spacer_ii }MDBoxLayout: { spacer_iii }orientation: 'vertical' " )
+        file.write( f" { spacer_iii }" + "pos_hint: { 'center_x': 0.5, 'center_y': 0.5 }" + f" { spacer_iii }" + "size_hint: 1, 10.38" )
         
         for currency_name in currencies_list.keys(): 
 			
-            widget = f' {spacer_iii}OneLineListItem: {spacer_iv}text: "{currency_name}" ' + \
-                     f' {spacer_iv}text_color: "#FFFFFF" {spacer_iv}on_release: app.set_currency( self.text, root.ids.scrollview.name ) \n'
+            widget = f' { spacer_iii }OneLineListItem: { spacer_iv }text: "{ currency_name }" ' + \
+                     f' { spacer_iv }text_color: "#FFFFFF" { spacer_iv }on_release: app.set_currency( self.text, root.ids.scrollview.name ) \n'
             
-            file.write(widget)
+            file.write( widget )
 
         file.close()
 
@@ -76,30 +74,28 @@ def convert( convert_from, convert_to, amount ):
         if amount != '':
             
             # api source - https://api-ninjas.com/api/convertcurrency
-            api_url = f'https://api.api-ninjas.com/v1/convertcurrency?want={convert_to}&have={convert_from}&amount={amount}'
+            api_url = f'https://api.api-ninjas.com/v1/convertcurrency?want={ convert_to }&have={ convert_from }&amount={ amount }'
 
-	    # create key from api-source above
+	        # create key from api-source above
             key = 'place key here'
 
-            response = requests.get(api_url, headers={'X-Api-Key': key})
+            response = requests.get( api_url, 
+                                     headers={ 'X-Api-Key': key } )
 
             if response.status_code == requests.codes.ok:
 
-                print('if')
-
-                new_amount = json.loads(response.text)
-                new_amount = new_amount['new_amount']
-                return new_amount
+                new_amount = json.loads( response.text )
+                new_amount = new_amount[ 'new_amount' ]
+                
+                return str( new_amount )
 
             else:
                 
-                text = json.loads(response.text)
-                print('else')
+                text = json.loads( response.text ) 
+
                 return 'Database Error!'
     
     except BaseException as e:
         
-        #print(e)
-
         return 'Connection Error!'
     
