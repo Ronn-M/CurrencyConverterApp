@@ -1,13 +1,10 @@
 from dataclasses import dataclass
 
-from kivy.clock import Clock
 from kivy.lang import Builder
-from kivy.uix.widget import Widget
 from kivy.core.window import Window
 from kivy.uix.screenmanager import ScreenManager
 
 from kivymd.app import MDApp
-from kivymd.uix.menu import MDDropdownMenu
 
 from UIAssets import convert, create_currencylist, get_currencies
 
