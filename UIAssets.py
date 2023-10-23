@@ -2,7 +2,7 @@ import json
 import requests  
 
 def get_currencies():
-
+    
     currencies_list = {
         
         'Australia Dollar': 'AUD', 'Great Britain Pound': 'GBP', 'Euro': 'EUR', 'Japan Yen': 'JPY', 'Switzerland Franc': 'CHF', 'USA Dollar': 'USD', 
@@ -41,6 +41,7 @@ def get_currencies():
 
     return currencies_list
 
+
 def create_currencylist():
 
     currencies_list = get_currencies()
@@ -66,6 +67,7 @@ def create_currencylist():
         file.close()
 
     return 
+
 
 def convert( convert_from, convert_to, amount ):
 
