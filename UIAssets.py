@@ -39,13 +39,6 @@ def get_currencies():
         'United Arab Emirates Dirham': 'AED', 'Vanuatu Vatu': 'VUV', 'Venezuela Bolivar': 'VEB', 'Vietnam Dong': 'VND', 'Yemen Rial': 'YER', 
         'Zambia Kwacha': 'ZMK', 'Zimbabwe Dollar': 'ZWD'}
 
-    return currencies_list
-
-
-def create_currencylist():
-
-    currencies_list = get_currencies()
-    
     with open('kv_data/CurrencyList.kv', 'wt') as file:
 
         spacer_i    = '\n\n\t'
@@ -65,8 +58,8 @@ def create_currencylist():
             file.write( widget )
 
         file.close()
-
-    return 
+        
+    return currencies_list
 
 
 def convert( convert_from, convert_to, amount ):
@@ -89,7 +82,7 @@ def convert( convert_from, convert_to, amount ):
                 new_amount = json.loads( response.text )
                 new_amount = new_amount[ 'new_amount' ]
                 
-                return str( new_amount )
+                return new_amount
 
             else:
                 
